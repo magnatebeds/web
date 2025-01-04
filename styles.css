@@ -7,6 +7,7 @@
     --text-secondary: rgba(255, 255, 255, 0.7);
     --gradient: linear-gradient(135deg, #d4af37 0%, #9b7b1c 100%);
     --border-light: rgba(255, 255, 255, 0.1);
+    --container-padding: clamp(1rem, 5vw, 2rem);
 }
 
 * {
@@ -939,5 +940,249 @@ footer {
 @keyframes fadeIn {
     to {
         opacity: 1;
+    }
+} 
+
+/* Base responsive styles */
+:root {
+    --container-padding: clamp(1rem, 5vw, 2rem);
+}
+
+/* General responsive adjustments */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 4rem var(--container-padding) !important;
+    }
+}
+
+/* Hero section responsive */
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.5rem, 8vw, 3.5rem);
+    }
+
+    .hero-features {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-visual {
+        height: 50vh;
+        min-height: 300px;
+    }
+}
+
+/* Features section responsive */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .feature-specs {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Materials section responsive */
+@media (max-width: 768px) {
+    .materials-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .material-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Engineering section responsive */
+@media (max-width: 768px) {
+    .engineering-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .engineering-specs {
+        gap: 1.5rem;
+    }
+
+    .spec-items {
+        grid-template-columns: 1fr;
+    }
+
+    .engineering-visual {
+        aspect-ratio: 1;
+        max-height: 300px;
+    }
+}
+
+/* Dimensions section responsive */
+@media (max-width: 768px) {
+    .dimensions-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .dimension-visual {
+        padding: 1.5rem;
+        aspect-ratio: 1;
+    }
+
+    .size-option {
+        padding: 1.5rem;
+    }
+}
+
+/* Customize section responsive */
+@media (max-width: 768px) {
+    .customize-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .wood-options {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .customize-visual {
+        height: 50vh;
+        min-height: 300px;
+    }
+}
+
+/* Contact section responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        gap: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .price-tag {
+        text-align: center;
+    }
+
+    .contact-method {
+        padding: 1rem;
+    }
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Additional small screen adjustments */
+@media (max-width: 480px) {
+    .feature-tag {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .spec-group {
+        padding: 1rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.75rem;
+    }
+
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .method-details {
+        align-items: center;
+    }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-visual,
+    .customize-visual {
+        height: 70vh;
+    }
+
+    .nav-links.active {
+        padding: 1rem;
+        justify-content: flex-start;
+    }
+}
+
+/* Navigation scroll behavior */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem var(--container-padding);
+    }
+
+    .nav-links.active {
+        padding-top: 5rem;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-link {
+        margin-top: 1rem;
+    }
+}
+
+/* SVG responsiveness */
+@media (max-width: 768px) {
+    .engineering-svg,
+    .dimension-svg {
+        transform: scale(0.8);
+    }
+
+    .annotations {
+        display: none;
     }
 } 
