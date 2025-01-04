@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnate | Luxury Beds & Custom Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MAGNATE</div>
+        <button class="mobile-menu-btn">
+            <span class="bar"></span>
+        </button>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#contact" class="cta-link">Contact Us</a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-eyebrow">Premium Bed Collection</div>
+                <h1>Engineering<br>meets comfort</h1>
+                <p class="hero-subtitle">€2,000</p>
+                <div class="hero-features">
+                    <div class="feature-tag">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 19H22L12 2Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Steel Frame
+                    </div>
+                    <div class="feature-tag">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 4H20V20H4V4Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Modular Design
+                    </div>
+                    <div class="feature-tag">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 12L12 3L21 12H3Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Hidden Storage
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="gradient-sphere"></div>
+                <div class="material-preview">
+                    <div class="material-sample wood"></div>
+                    <div class="material-sample steel"></div>
+                </div>
+                <model-viewer class="hero-model" 
+                    camera-controls
+                    auto-rotate 
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-visual">
+                    <svg class="feature-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Steel Frame Illustration -->
+                        <rect x="50" y="100" width="300" height="150" stroke="var(--primary)" stroke-width="4"/>
+                        <rect x="70" y="120" width="260" height="110" stroke="var(--text)" stroke-width="2" stroke-dasharray="4 4"/>
+                        <circle cx="80" cy="90" r="10" fill="var(--primary)"/>
+                        <circle cx="320" cy="90" r="10" fill="var(--primary)"/>
+                        <path d="M80 90 L320 90" stroke="var(--primary)" stroke-width="4"/>
+                        <path class="animate-dash" d="M100 140 L300 140" stroke="var(--text)" stroke-width="2" stroke-dasharray="4 4"/>
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Engineering Excellence</h3>
+                    <p>Premium steel frame construction designed to last generations</p>
+                    <div class="feature-specs">
+                        <div class="spec">
+                            <span class="spec-label">Frame</span>
+                            <span class="spec-value">Steel</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Durability</span>
+                            <span class="spec-value">Lifetime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-visual">
+                    <svg class="feature-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Updated Customizable Design Illustration -->
+                        <rect x="100" y="50" width="200" height="200" stroke="var(--primary)" stroke-width="4"/>
+                        <!-- Interchangeable Panels Animation -->
+                        <rect class="panel-animate" x="70" y="70" width="30" height="160" fill="var(--primary)"/>
+                        <rect class="panel-animate" x="300" y="70" width="30" height="160" fill="var(--primary)"/>
+                        <!-- Design Elements -->
+                        <path class="design-line" d="M130 100 L270 100" stroke="var(--text)" stroke-width="2"/>
+                        <path class="design-line" d="M130 150 L270 150" stroke="var(--text)" stroke-width="2"/>
+                        <path class="design-line" d="M130 200 L270 200" stroke="var(--text)" stroke-width="2"/>
+                        <!-- Interactive Points -->
+                        <circle class="point-animate" cx="130" cy="100" r="4" fill="var(--primary)"/>
+                        <circle class="point-animate" cx="270" cy="150" r="4" fill="var(--primary)"/>
+                        <circle class="point-animate" cx="200" cy="200" r="4" fill="var(--primary)"/>
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Customizable Design</h3>
+                    <p>Interchangeable wooden panels in premium finishes</p>
+                    <div class="feature-specs">
+                        <div class="spec">
+                            <span class="spec-label">Wood Types</span>
+                            <span class="spec-value">6 types</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Panel Height</span>
+                            <span class="spec-value">80cm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-visual">
+                    <svg class="feature-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Storage Mechanism Illustration -->
+                        <rect x="50" y="150" width="300" height="100" stroke="var(--primary)" stroke-width="4"/>
+                        <path class="animate-lift" d="M50 150 L350 150" stroke="var(--primary)" stroke-width="4"/>
+                        <path d="M175 200 L225 200" stroke="var(--text)" stroke-width="8" stroke-linecap="round"/>
+                        <circle cx="100" cy="150" r="5" fill="var(--primary)"/>
+                        <circle cx="300" cy="150" r="5" fill="var(--primary)"/>
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Smart Storage</h3>
+                    <p>Hydraulic lift system with 30cm storage height</p>
+                    <div class="feature-specs">
+                        <div class="spec">
+                            <span class="spec-label">Capacity</span>
+                            <span class="spec-value">450L</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Mechanism</span>
+                            <span class="spec-value">Hydraulic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="dimensions">
+        <div class="section-header">
+            <h2>Perfect Dimensions</h2>
+            <p>Available in custom sizes to fit your space perfectly</p>
+        </div>
+        <div class="dimensions-container">
+            <div class="dimension-visual">
+                <svg class="dimension-svg" viewBox="0 0 400 400" fill="none">
+                    <!-- Bed outline -->
+                    <rect x="50" y="50" width="300" height="300" stroke="var(--primary)" stroke-width="2" rx="4"/>
+                    
+                    <!-- Dimension lines -->
+                    <line x1="30" y1="50" x2="30" y2="350" stroke="var(--text)" stroke-width="1"/>
+                    <line x1="50" y1="370" x2="350" y2="370" stroke="var(--text)" stroke-width="1"/>
+                    
+                    <!-- Arrows -->
+                    <path d="M30 50 L25 60 L35 60 Z" fill="var(--text)"/>
+                    <path d="M30 350 L25 340 L35 340 Z" fill="var(--text)"/>
+                    <path d="M50 370 L60 365 L60 375 Z" fill="var(--text)"/>
+                    <path d="M350 370 L340 365 L340 375 Z" fill="var(--text)"/>
+                    
+                    <!-- Measurements -->
+                    <text x="15" y="200" fill="var(--text)" font-size="14" text-anchor="middle" transform="rotate(-90, 15, 200)">200cm</text>
+                    <text x="200" y="390" fill="var(--text)" font-size="14" text-anchor="middle">200cm</text>
+                    
+                    <!-- Interior details -->
+                    <rect x="70" y="70" width="260" height="260" stroke="var(--text)" stroke-width="1" stroke-dasharray="4 4"/>
+                    
+                    <!-- Custom size note -->
+                    <text x="200" y="200" fill="var(--text-secondary)" font-size="12" text-anchor="middle">Custom sizes available</text>
+                </svg>
+            </div>
+            <div class="dimensions-specs">
+                <div class="size-option">
+                    <div class="size-name">Standard</div>
+                    <div class="size-specs">
+                        <div class="spec">
+                            <span class="spec-label">Length</span>
+                            <span class="spec-value">200cm</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Width</span>
+                            <span class="spec-value">200cm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="size-option">
+                    <div class="size-name">Custom</div>
+                    <div class="size-range">
+                        <div class="spec">
+                            <span class="spec-label">Length Range</span>
+                            <span class="spec-value">180-220cm</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Width Range</span>
+                            <span class="spec-value">160-220cm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="engineering">
+        <div class="section-header">
+            <h2>Engineering Excellence</h2>
+            <p>Precision engineering meets artisanal craftsmanship</p>
+        </div>
+        <div class="engineering-container">
+            <div class="engineering-specs">
+                <div class="spec-group">
+                    <div class="spec-title">Frame Construction</div>
+                    <div class="spec-items">
+                        <div class="spec">
+                            <span class="spec-label">Steel Grade</span>
+                            <span class="spec-value">S355</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Load Capacity</span>
+                            <span class="spec-value">800kg</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Mechanism</div>
+                    <div class="spec-items">
+                        <div class="spec">
+                            <span class="spec-label">Lift Force</span>
+                            <span class="spec-value">2000N</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Cycles Tested</span>
+                            <span class="spec-value">50,000+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="engineering-visual">
+                <svg class="engineering-svg" viewBox="0 0 400 400" fill="none">
+                    <!-- Base frame -->
+                    <rect x="50" y="100" width="300" height="200" stroke="var(--primary)" stroke-width="2"/>
+                    
+                    <!-- Storage mechanism -->
+                    <g class="mechanism-group">
+                        <!-- Left mechanism -->
+                        <path class="mechanism-line" d="M100 250 L100 150" stroke="var(--primary)" stroke-width="2"/>
+                        <circle cx="100" cy="250" r="4" fill="var(--primary)"/>
+                        <circle cx="100" cy="150" r="4" fill="var(--primary)"/>
+                        
+                        <!-- Right mechanism -->
+                        <path class="mechanism-line" d="M300 250 L300 150" stroke="var(--primary)" stroke-width="2"/>
+                        <circle cx="300" cy="250" r="4" fill="var(--primary)"/>
+                        <circle cx="300" cy="150" r="4" fill="var(--primary)"/>
+                    </g>
+                    
+                    <!-- Support structure -->
+                    <g class="support-beams">
+                        <line x1="75" y1="150" x2="325" y2="150" stroke="var(--text)" stroke-width="1" stroke-dasharray="4 4"/>
+                        <line x1="75" y1="200" x2="325" y2="200" stroke="var(--text)" stroke-width="1" stroke-dasharray="4 4"/>
+                        <line x1="75" y1="250" x2="325" y2="250" stroke="var(--text)" stroke-width="1" stroke-dasharray="4 4"/>
+                    </g>
+                    
+                    <!-- Technical annotations -->
+                    <g class="annotations" font-size="12" fill="var(--text-secondary)">
+                        <text x="120" y="140">Hydraulic Lift System</text>
+                        <text x="120" y="270">Reinforced Steel Frame</text>
+                        <line x1="100" y1="135" x2="115" y2="135" stroke="var(--text-secondary)" stroke-width="1"/>
+                        <line x1="100" y1="265" x2="115" y2="265" stroke="var(--text-secondary)" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Measurement points -->
+                    <g class="measurement-points">
+                        <circle cx="50" cy="100" r="2" fill="var(--primary)"/>
+                        <circle cx="350" cy="100" r="2" fill="var(--primary)"/>
+                        <circle cx="50" cy="300" r="2" fill="var(--primary)"/>
+                        <circle cx="350" cy="300" r="2" fill="var(--primary)"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="warranty">
+        <div class="section-header">
+            <h2>25 Year Warranty</h2>
+            <p>Built to last generations</p>
+        </div>
+        <div class="warranty-grid">
+            <div class="warranty-card">
+                <div class="warranty-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="var(--primary)" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Frame Warranty</h3>
+                <div class="spec">
+                    <span class="spec-label">Coverage</span>
+                    <span class="spec-value">25 Years</span>
+                </div>
+            </div>
+            <div class="warranty-card">
+                <div class="warranty-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2v20M2 12h20" stroke="var(--primary)" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Mechanism Warranty</h3>
+                <div class="spec">
+                    <span class="spec-label">Coverage</span>
+                    <span class="spec-value">10 Years</span>
+                </div>
+            </div>
+            <div class="warranty-card">
+                <div class="warranty-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="4" y="4" width="16" height="16" stroke="var(--primary)" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Panels Warranty</h3>
+                <div class="spec">
+                    <span class="spec-label">Coverage</span>
+                    <span class="spec-value">5 Years</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="customize">
+        <div class="customize-container">
+            <div class="customize-content">
+                <h2>Your Bed, Your Design</h2>
+                <p>Choose from our curated selection of premium wood finishes</p>
+                <div class="wood-options">
+                    <button class="wood-option active" data-wood="walnut">Walnut</button>
+                    <button class="wood-option" data-wood="oak">Oak</button>
+                    <button class="wood-option" data-wood="mahogany">Mahogany</button>
+                </div>
+            </div>
+            <div class="customize-visual">
+                <model-viewer class="bed-model" 
+                    camera-controls>
+                </model-viewer>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-header">
+            <h2>Get Your Magnate Bed</h2>
+            <p>Experience luxury and engineering excellence</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="price-tag">
+                    <span class="price">€2,000</span>
+                    <span class="price-note">Custom sizes may vary</span>
+                </div>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 4H4v16h16V4z" stroke="var(--primary)" stroke-width="2"/>
+                            <path d="M4 4l8 8 8-8M4 20l6-6m4 6l6-6" stroke="var(--primary)" stroke-width="2"/>
+                        </svg>
+                        <div class="method-details">
+                            <h4>Email Us</h4>
+                            <a href="mailto:sales@magnate-beds.com">sales@magnate-beds.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="var(--primary)" stroke-width="2"/>
+                        </svg>
+                        <div class="method-details">
+                            <h4>Call Us</h4>
+                            <a href="tel:+1234567890">+123 456 7890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Bed Size</option>
+                        <option value="200x200">200 x 200 cm</option>
+                        <option value="custom">Custom Size</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Additional Requirements" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Request Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">MAGNATE</div>
+                <p>Redefining luxury rest through engineering excellence</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Contact</h4>
+                    <a href="mailto:info@magnate-beds.com">info@magnate-beds.com</a>
+                </div>
+                <div class="link-group">
+                    <h4>Social</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
